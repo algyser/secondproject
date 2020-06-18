@@ -29,6 +29,11 @@ class Kernel extends ConsoleKernel
 
         $schedule->command('userexpir')
                  ->everyMinute();
+
+        $schedule->command('motifyemails')
+                 ->everyMinute();
+
+
     }
 
     /**
